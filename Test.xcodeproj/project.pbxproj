@@ -13,6 +13,7 @@
 		9539E78D273944C100ED054D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9539E78B273944C100ED054D /* Main.storyboard */; };
 		9539E78F273944C400ED054D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9539E78E273944C400ED054D /* Assets.xcassets */; };
 		9539E792273944C400ED054D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9539E790273944C400ED054D /* LaunchScreen.storyboard */; };
+		95C5D65627D0B042009B0691 /* CountryPickerView in Frameworks */ = {isa = PBXBuildFile; productRef = 95C5D65527D0B042009B0691 /* CountryPickerView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C5D65627D0B042009B0691 /* CountryPickerView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Test;
+			packageProductDependencies = (
+				95C5D65527D0B042009B0691 /* CountryPickerView */,
+			);
 			productName = Test;
 			productReference = 9539E782273944C100ED054D /* Test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 9539E779273944C100ED054D;
+			packageReferences = (
+				95C5D65427D0B042009B0691 /* XCRemoteSwiftPackageReference "CountryPickerView" */,
+			);
 			productRefGroup = 9539E783273944C100ED054D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95C5D65427D0B042009B0691 /* XCRemoteSwiftPackageReference "CountryPickerView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kizitonwose/CountryPickerView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95C5D65527D0B042009B0691 /* CountryPickerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95C5D65427D0B042009B0691 /* XCRemoteSwiftPackageReference "CountryPickerView" */;
+			productName = CountryPickerView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9539E77A273944C100ED054D /* Project object */;
 }
